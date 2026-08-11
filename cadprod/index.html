@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Produtos</h1>
+        <div class="form-section">
+            <input type="text" id="idProduto" placeholder="ID">
+            <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+            <input type="number" id="precoProduto" placeholder="Preço">
+            <input type="number" id="quantidadeProduto" placeholder="Quantidade em Estoque">
+            <div class="buttons">
+                <button onclick="incluirProduto()">Incluir</button>
+                <button onclick="alterarProduto()">Alterar</button>
+                <button onclick="excluirProduto()">Excluir</button>
+                <button onclick="consultarProduto()">Consultar</button>
+                <button onclick="listarProdutos()">Listar</button>
+            </div>
+        </div>
+        <div class="list-section">
+            <h2>Lista de Produtos</h2>
+            <table id="tabelaProdutos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Produtos serão inseridos aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
